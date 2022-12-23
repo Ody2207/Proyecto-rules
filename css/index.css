@@ -205,13 +205,13 @@ main {
 }
 
 .header-sec__title {
-	font-size: 18px;
+	font-size: 15px;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 800;
 }
 
 .header-sec__plus {
-	width: 15%;
+	width: 10%;
 }
 
 .contenido {
