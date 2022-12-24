@@ -291,10 +291,15 @@ main {
 	width: 15px;
 	margin: 0 10px 0 10px;
 }
-.contrato-container .estado .arrow {
+.contrato-container .estado .arrow-estado {
 	width: 15px;
 	margin-left: 10px;
 	cursor: pointer;
+	transition: 0.2s;
+}
+.contrato-container .estado .arrow-estado:hover {
+	background-color: var(--color-input-click);
+	border-radius: 5px;
 }
 .contrato-container .estado__configuraciones {
 	margin-left: 50px;
@@ -314,7 +319,9 @@ main {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	align-items: center;
-	width: 18%;
+	position: absolute;
+    bottom: 291px;
+	width: 150px;
 	height: 12vh;
 	background-color:var(--principal);
 	border-radius: 5px;
@@ -347,4 +354,6 @@ main {
 	background-color: var(--principal);
 }
 
-
+.inactive {
+	display: none;
+}

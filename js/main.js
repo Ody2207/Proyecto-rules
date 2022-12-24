@@ -125,6 +125,13 @@ const isActivo = document.querySelector('.activo');
 const circleColor = document.querySelector('.circle');
 const parrafoEstadoActivadoFinalizado = document.querySelector('.parrafo-estado-af');
 
+// const arrow
+
+const arrowEstados = document.querySelector('.arrow-estado');
+const aside = document.querySelector('.con-estado');
+
+// funciones 
+
 checkActivado.setAttribute('src', '../recursos/svg/check-full.svg');
 checkFinalizado.setAttribute('src', '../recursos/svg/check.svg');
 
@@ -133,6 +140,8 @@ checkActivado.addEventListener('click', checkFinalizadoYes);
 
 circleColor.setAttribute('src', '../recursos/svg/circle-green.svg');
 parrafoEstadoActivadoFinalizado.innerHTML = 'Activo';
+
+
 
 function checkActivadoYes () {
 	if (isActivo) {
@@ -160,10 +169,6 @@ function checkFinalizadoYes () {
 	}
 }
 
-
-
-
-
-
-
-
+arrowEstados.addEventListener('click', () => {
+	aside.classList.toggle('inactive');
+});
