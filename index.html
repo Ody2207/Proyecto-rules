@@ -6,14 +6,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contratos</title>
 
-	<link rel="stylesheet" href="./css/index.css">
+	<link rel="stylesheet" href="./css/style.css">
 
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
+	<dialog class="dialog-conf inactive">
+		<div class="dialog-container">
+			<div class="container-info-input">
+				<div class="container-info__close">
+					<div>
+						<p>Nombre del contrato</p>
+						<input class="input-name" placeholder="Escribe el nombre" type="text" name="" id="">
+					</div>
+					
 
+					<img class="conf-exit" src="./recursos/svg/x.svg" alt="">
+				</div>
+				
+				<p>Periodo</p>
+				<input class="input-date date1" type="date" name="" id="">
+				<p class="periodo-date">Al</p>
+				<input class="input-date date2" type="date" name="" id="">
+			
+				<p>Valor del contrato</p>
+				<input class="input-price" placeholder="1000000" type="text" name="" id="">
+			</div>
+			<div class="container-configuraciones">
+				<div class="container-confi">
+					<button class="btn-confi">Ver contrato</button>
+					<button class="btn-confi">Asignar</button>
+					<button class="btn-confi btn-guardar">Guardar</button>
+				</div>
+	
+				<div class="container-eliminar">
+					<button class="btn-confi btn-eliminar"> Eliminar</button>
+				</div>
+			</div>
+		</div>
+	</dialog>
+	
 	<header>
 		<div class="logo">
 			<h2 class="logo__rules">RULES</h2>
@@ -112,43 +146,16 @@
 				</div>
 
 				
-			</section>
-
-			<aside>
-				<div>
-					<div>
-						<div>
-							<p>Nombre del contrato</p>
-							<input type="text" name="" id="">
-		
-							<p>Periodo</p>
-							<input type="date" name="" id="">
-							<input type="date" name="" id="">
-		
-							<p>Valor del contrato</p>
-							<input type="text" name="" id="">
-						</div>
-	
-						<img src="" alt="">
-					</div>
-	
-					<div>
-						<button>Ver contrato</button>
-						<button>Asignar</button>
-						<button>Guardar</button>
-					</div>
-	
-					<div>
-						<button>Eliminar</button>
-					</div>
-				</div>
-			</aside>
-
 		</section>
+		
+	</section>
+		
 	</main>
 
 	<footer></footer>
 	
+	
+
 
 	<script src="./js/main.js"></script>
 </body>

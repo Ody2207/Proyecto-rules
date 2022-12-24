@@ -172,3 +172,20 @@ function checkFinalizadoYes () {
 arrowEstados.addEventListener('click', () => {
 	aside.classList.toggle('inactive');
 });
+
+// ------------ Boton exit-ppen PopUp
+
+const btnAbrirPopUp = document.querySelector('.estado__configuraciones');
+const btnCerrarPopUp = document.querySelector('.conf-exit');
+const popUp = document.querySelector('.dialog-conf')
+
+btnAbrirPopUp.addEventListener('click', abrirPopUp);
+btnCerrarPopUp.addEventListener('click', cerrarPopUp);
+
+function abrirPopUp () {
+	popUp.classList.remove('inactive');
+}
+
+function cerrarPopUp () {
+	popUp.classList.add('inactive');
+}
