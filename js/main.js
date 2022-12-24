@@ -112,6 +112,58 @@ function renderListContratos (arr) {
 	};
 };
 
-renderListContratos(listContratos);
+// renderListContratos(listContratos);
 
-console.log('hola')
+// ------------------- Funciones de estado-check
+
+const checkActivado = document.querySelector('#checkActivo');
+const checkFinalizado = document.querySelector('#checkFinalizado');
+const isActivo = document.querySelector('.activo');
+
+// const circle red o green
+
+const circleColor = document.querySelector('.circle');
+const parrafoEstadoActivadoFinalizado = document.querySelector('.parrafo-estado-af');
+
+checkActivado.setAttribute('src', '../recursos/svg/check-full.svg');
+checkFinalizado.setAttribute('src', '../recursos/svg/check.svg');
+
+checkFinalizado.addEventListener('click', checkActivadoYes);
+checkActivado.addEventListener('click', checkFinalizadoYes);
+
+circleColor.setAttribute('src', '../recursos/svg/circle-green.svg');
+parrafoEstadoActivadoFinalizado.innerHTML = 'Activo';
+
+function checkActivadoYes () {
+	if (isActivo) {
+		checkActivado.setAttribute('src', '../recursos/svg/check.svg');
+		checkFinalizado.setAttribute('src', '../recursos/svg/check-full.svg');
+		checkFinalizado.classList.add('activo');
+		checkActivado.classList.remove('activo');
+
+		// circle red
+		circleColor.setAttribute('src', '../recursos/svg/circle-red.svg');
+		parrafoEstadoActivadoFinalizado.innerHTML = 'Finalizado';
+	}
+};
+
+function checkFinalizadoYes () {
+	if (isActivo) {
+		checkActivado.setAttribute('src', '../recursos/svg/check-full.svg');
+		checkFinalizado.setAttribute('src', '../recursos/svg/check.svg');
+		checkFinalizado.classList.remove('activo');
+		checkActivado.classList.add('activo');
+
+		// cicle green
+		parrafoEstadoActivadoFinalizado.innerHTML = 'Activo';
+		circleColor.setAttribute('src', '../recursos/svg/circle-green.svg');
+	}
+}
+
+
+
+
+
+
+
+

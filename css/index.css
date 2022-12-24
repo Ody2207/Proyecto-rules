@@ -279,6 +279,7 @@ main {
 }
 .contrato-container .contrato-name:hover {
 	text-decoration: underline;
+	cursor: pointer;
 }
 .contrato-container .contrato-date{
 	font-size: 15px;
@@ -307,3 +308,43 @@ main {
 	background-color: #DADADA;
 	border-radius: 100%;
 }
+
+/* ---------------- Estilos Estado ------------- */
+.con-estado {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	align-items: center;
+	width: 18%;
+	height: 12vh;
+	background-color:var(--principal);
+	border-radius: 5px;
+	-webkit-box-shadow: 2px 2px 9px 0px rgba(154,154,154,1);
+	-moz-box-shadow: 2px 2px 9px 0px rgba(154,154,154,1);
+	box-shadow: 2px 2px 9px 0px rgba(154,154,154,1);
+}
+.con-estado .container-estados {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	gap: 10px;
+	margin-left: 12px;
+}
+.estado-circle {
+	width: 15px;
+}
+.check {
+	margin-left: 15px;
+	width: 25px;
+	padding: 3px;
+	border-radius: 100%;
+	transition: .2s;
+}
+.check:hover {
+	background: var(--color-input-click);
+
+}
+.activo:hover {
+	background-color: var(--principal);
+}
+
+
