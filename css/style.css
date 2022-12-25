@@ -7,6 +7,7 @@
 	--black-1: #1E1E1E;
 	--black-2: #2C2C2C;
 	--black-3: #444444;
+	--balck-4: #161d25;
 	--color-bar: #ececec;
 	--color-input-click: #DADADA;
 	--poiret: 'Poiret One', cursive;
@@ -25,7 +26,7 @@
 header {
 	background-color: var(--fondo);
 	display: grid;
-	grid-template-columns: 1fr 1.5fr 1fr;
+	grid-template-columns: .8fr 1.5fr 1fr;
 	grid-template-rows: 15vh;
 }
 
@@ -35,7 +36,7 @@ header {
 	justify-content: center;
 	margin-right: 10px;
 	background-color: var(--color-sec);
-	border-radius: 0 50px 0 0;
+	border-radius: 0 40px 0 0;
 }
 
 .logo__rules {
@@ -105,80 +106,51 @@ header {
 
 main {
 	display: grid;
-	grid-template-columns: 1fr 2.5fr;
+	grid-template-columns: .8fr 2.5fr;
 	grid-template-rows: 85vh;
 	background-color: var(--fondo);
 }
 
+/* Estilos del buscador ------------------------------------------------------------ */
 .block-1 {
 	background-color: var(--color-sec);
 	margin: 0 10px 0 0;
-	border-radius: 0 0 50px 0;
+	border-radius: 0 0 40px 0;
 }
-
-.block-1__Home {
-	font-size: 30px;
-	background-color: var(--principal);
-	font-family: 'Nunito', sans-serif;
-	width: 50%;
-	margin: 50px auto 20px auto;
-	text-align: center;
-	padding: 5px;
-	border-radius: 20px;
-}
-
-.block-1__Home:hover {
-	background-color: var(--conteaste);
-	transition-duration: .2s;
-}
-
-.blocksec-1 {
+.container-prin, .container-sec {
+	width: 75%;
+	height: 10%;
 	display: flex;
-	justify-content: left;
-	align-items: center;
-	background-color: var(--conteaste);
-	width: 90%;
-	height: 8%;
-	border-radius: 0 20px 20px 0;
+    justify-content: left;
+    align-items: center;
+    background-color: var(--balck-4);
+    margin: 20px auto;
+    border-radius: 10px;
 }
-
-.blocksec-1__icon {
-	width: 10%;
-	margin-left: 20%;
+.container-sec {
+	background-color: var(--color-sec);
+	transition: 0.3s;
+}
+.container-sec:hover {
+	background-color: var(--balck-4);
+}
+.seccion__icon {
+	width: 13%;
+	margin-left: 10%;
 	margin-right: 20px;
 }
-
-.blocksec-1__contratos {
+.seccion-seleccionada, .no-selec {
 	font-size: 25px;
 	font-family: 'Nunito', sans-serif;
+	color: var(--conteaste);
+	cursor: pointer;
 }
-
-.blocksec-2 {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	width: 90%;
-	height: 8%;
-	border-radius: 0 20px 20px 0;
-	margin-top: 20px;
-}
-
-.blocksec-2:hover {
-	background-color: var(--conteaste);
-	transition: .2s;
-}
-
-.blocksec-2__example-1 {
-	font-size: 25px;
-	font-family: 'Nunito', sans-serif;
+.no-selec {
 	color: var(--principal);
 }
 
-.blocksec-2__example-1:hover {
-	color: black;
-}
 
-
+/* Bloque contratos ----------------------------------------------------------- */
 .block-2 {
 	background-color: var(--principal);
 	margin: 10px 20px 20px 10px;
