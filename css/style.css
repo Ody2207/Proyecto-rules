@@ -124,7 +124,7 @@ main {
     justify-content: left;
     align-items: center;
     background-color: var(--balck-4);
-    margin: 20px auto;
+    margin: 10px auto;
     border-radius: 10px;
 }
 .container-sec {
@@ -140,7 +140,7 @@ main {
 	margin-right: 20px;
 }
 .seccion-seleccionada, .no-selec {
-	font-size: 25px;
+	font-size: 22px;
 	font-family: 'Nunito', sans-serif;
 	color: var(--conteaste);
 	cursor: pointer;
@@ -154,7 +154,7 @@ main {
 .block-2 {
 	background-color: var(--principal);
 	margin: 10px 20px 20px 10px;
-	border-radius: 100px 20px 20px 20px;
+	border-radius: 20px;
 }
 
 .block-2__sec {
@@ -219,7 +219,7 @@ main {
 }
   
 .contratos::-webkit-scrollbar-track {
-	background: var(--principal);        /* color of the tracking area */
+	background: var(--fondo);        /* color of the tracking area */
 }
   
 .contratos::-webkit-scrollbar-thumb {
